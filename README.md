@@ -2,5 +2,3 @@
 
 Sample content
 More content.
-
-Other content.
