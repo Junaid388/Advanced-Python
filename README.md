@@ -2,7 +2,7 @@
 
 # Advanced Flow Control
 
-It consist of differnet types of looping control such as
+It consist of differnet types of looping control flow in Python
 
 1. While - Else
 2. For - Else
