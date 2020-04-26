@@ -19,6 +19,10 @@ class Planet(object):
 			raise ValueError("Cannot set empty Planet.name")
 		self._name = value
 
+	# The new descriptor approah will be similar to
+	# m = pluto.mass_kilograms.      m = Positive.__get__(self, pluto, Planet)
+	# pluto.mass_kilograms = m.      Positive.__set__(self, pluto, m)
+
 	radius_metres = Positive()
 	mass_kilograms = Positive()
 	orbital_period_seconds = Positive()
@@ -42,9 +46,7 @@ if __name__ == '__main__':
 	print(mars.radius_metres)
 
 
-	# The new descriptor approah will be similar to
-	# m = pluto.mass_kilograms.      m = Positive.__get__(self, pluto, Planet)
-	# pluto.mass_kilograms = m.      Positive.__set__(self, pluto, m)
+	
 
 	# @property
 	# def radius_metres(self):
